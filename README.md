@@ -66,7 +66,22 @@ A selectbox introduced a means to add that image to the training data of its cor
 ![developer mode](Images/deploy4.png)
 
 
+<<<<<<< Updated upstream
 ## CONCLUSIONS
 
 
 ## RECOMMENDATIONS
+=======
+## RESULTS AND CONCLUSIONS
+
+**Results**
+Our predictive modeling approach effectively addresses the challenge of expereinced by Konza city on their waste management. Using advanced neural network machine learning, we developed a model that accurately and efficiently categorizes real waste found in a landfill. The ResNet50 model provided the best perfomance achieving the highest accuracy across the board
+
+**Conclusion**
+
+This project provided a robust predictive model with continous model learning leveraging strong machine learning techniques. Understanding the needs of the Konza City administration to meet their goals on waste wanagement and making it into an eco-diverse city, was crucial in providing a system that is user friend and easily intergrateable.  
+Continuous updates and refinements are important to ensure the model remains accurate in predicting the waste in the city.
+
+Implementing this models into their city will enhance the beauty of the city as well as improve the quality of life of its residents. Further improvemts however can be noted as there is a need to tackle the rapidly increasing e-waste associated with the ease of a acquiring electronics.
+
+>>>>>>> Stashed changes
