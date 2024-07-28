@@ -1,6 +1,6 @@
 
 
-![Recycled Waste image](images/image4.png)
+![Recycled Waste image](Images/image4.png)
 # IDUMP IMAGE CLASSIFICATION
 
 
@@ -32,7 +32,7 @@ Konza City Technopolis faces significant challenges in managing the diverse and 
 The images used for this project were sourced from a Kaggle dataset by Joakim Arvidsso titled [RealWaste Image Classification](https://www.kaggle.com/datasets/joebeachcapital/realwaste ). It is a dataset of 8 major material types commonly collected within a landfill environment. 
 The data  had 4291 image that can be further classified into the following classes as below :
  
-![class distribution](images/classes.png)
+![class distribution](Images/classes.png)
 
 ## MODELLING
 
@@ -49,17 +49,21 @@ Augementation of the models ranged from Zoom range, shear range, rotation range,
 
 ## DEPLOYMENT
 
-Upon selection of the best model, we were able to deploy a model app for the classification problem
-![home](images/deploy1.png)
+Upon selection of the best model, we were able to deploy a model app for the classification problem.
 
-Classification was successful on a majority of the classes
-![successful classification](images/deploy2.png)
+![home](Images/deploy1.png)
 
-However some images were incorrectly classfied as well and these was accomodated in the app by introducing a section to verify if it  was correctly classified or not
-![unsuccessful classification](images/deploy3.png)
+Classification was successful on a majority of the classes.
 
-This however was catered for by introducing a means to add that image to the training data of its correct class and retrain the model so as to continously improve on its accuracy
-![developer mode](images/deploy4.png)
+![successful classification](Images/deploy2.png)
+
+However some images were incorrectly classfied as well. This was accomodated for in the app by introducing a section to verify if it  was correctly classified or not as a radio button.
+
+![unsuccessful classification](Images/deploy3.png)
+
+A selectbox introduced a means to add that image to the training data of its correct class and retrain the model so as to continously improve on its accuracy.
+
+![developer mode](Images/deploy4.png)
 
 
 ## CONCLUSIONS
