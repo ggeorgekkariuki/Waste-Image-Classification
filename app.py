@@ -129,7 +129,7 @@ def retrain_model():
 # Load the pre-trained model from the .pkl file
 @st.cache_resource
 def load_model():
-    with open('Pickle_files/models/resnet50.pkl', 'rb') as file:
+    with open('Pickle_files/models/model.pkl', 'rb') as file:
         return pickle.load(file)
 
 model = load_model()
