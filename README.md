@@ -59,7 +59,7 @@ However some images were incorrectly classfied as well and these was accomodated
 ![unsuccessful classification](Images/deploy3.png)
 
 This however was catered for by introducing a means to add that image to the training data of its correct class and retrain the model so as to continously improve on its accuracy
-![developer mode](images/deploy4.png)
+![developer mode](Images/deploy4.png)
 
 
 ## CONCLUSIONS
