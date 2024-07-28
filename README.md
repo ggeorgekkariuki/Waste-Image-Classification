@@ -49,16 +49,20 @@ Augementation of the models ranged from Zoom range, shear range, rotation range,
 
 ## DEPLOYMENT
 
-Upon selection of the best model, we were able to deploy a model app for the classification problem
+Upon selection of the best model, we were able to deploy a model app for the classification problem.
+
 ![home](Images/deploy1.png)
 
-Classification was successful on a majority of the classes
+Classification was successful on a majority of the classes.
+
 ![successful classification](Images/deploy2.png)
 
-However some images were incorrectly classfied as well and these was accomodated in the app by introducing a section to verify if it  was correctly classified or not
+However some images were incorrectly classfied as well. This was accomodated for in the app by introducing a section to verify if it  was correctly classified or not as a radio button.
+
 ![unsuccessful classification](Images/deploy3.png)
 
-This however was catered for by introducing a means to add that image to the training data of its correct class and retrain the model so as to continously improve on its accuracy
+A selectbox introduced a means to add that image to the training data of its correct class and retrain the model so as to continously improve on its accuracy.
+
 ![developer mode](Images/deploy4.png)
 
 
