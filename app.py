@@ -186,6 +186,7 @@ if selected == "Home":
                         cols = st.sidebar.columns(num_columns)
                         for idx, (image, filename) in enumerate(zip(selected_images, class_names)):
                             col = cols[idx % num_columns]
+                            image = image.replace("\\", "/")
                             col.image(image, caption=filename, use_column_width=True)
                     else:
                         st.sidebar.warning('No pickled files found in the specified folder.')
