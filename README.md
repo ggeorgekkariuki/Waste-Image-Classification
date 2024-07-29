@@ -15,7 +15,8 @@ Konza City Technopolis faces significant challenges in managing the diverse and 
 
 ## Objectives
 
-**Main Objective:** Develop and deploy a robust image recognition system to enhance waste management efficiency in Konza City.
+**Main Objective:**
+To Develop and deploy a robust image recognition system to enhance waste management efficiency in Konza City.
 
 **Specific Objectives:**
 1. Gather and preprocess a diverse dataset of waste images to ensure robust model training, including various types and conditions of waste items.
@@ -70,7 +71,7 @@ A selectbox introduced a means to add that misclassified image to the training d
 
 **Results**
 
-Our predictive modeling approach effectively addresses the challenge experienced by Konza City on their waste management. Using advanced neural network machine learning, we developed a model that accurately and efficiently categorizes real waste found in a landfill. The ResNet50 model provided the best performance achieving the highest accuracy across the board
+It is evident that metals and plastics are the most common landfill materials. From this, our predictive modeling approach effectively addresses the challenge experienced by Konza City on their waste management in the landfills. Using advanced neural network machine learning, we developed a model that accurately and efficiently categorizes real waste found in a landfill. The ResNet50 model provided the best performance achieving the highest accuracy across the board
 
 **Conclusion**
 
