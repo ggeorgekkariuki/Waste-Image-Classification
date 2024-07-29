@@ -79,19 +79,19 @@ with st.container(border=True):
 
                     st.subheader('Material Handling', divider=True)
                     if label == 'Food Organics' or label == 'Vegetation':
-                        col1, col2 = st.columns([3, 7], gap="medium")
+                        col1, col2 = st.columns([3, 7], gap="large")
                         with col1:
                             st.image('Images/Compost.jpg', width=120)
                         with col2:
                             st.write('Divertible Organics: Derive energy and fertilizer.')
                     elif label in ['Glass', 'Paper', 'Metal', 'Plastic']:
-                        col1, col2 = st.columns([3, 7], gap="medium")
+                        col1, col2 = st.columns([3, 7], gap="large")
                         with col1:
                             st.image('Images/Recycle.jpg', width=120)
                         with col2:
                             st.write("Recyclable Inorganics: Fit for repurposing.")
                     else:
-                        col1, col2 = st.columns([3, 7], gap="medium")
+                        col1, col2 = st.columns([3, 7], gap="large")
                         with col1:
                             st.image('Images/Trash.jpg', width=120)
                         with col2:
