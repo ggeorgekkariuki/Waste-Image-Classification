@@ -143,3 +143,11 @@ pickled_images_folder = 'Pickle_files/images'
 
 # Garbage Class names
 class_names = ['Food Organics','Glass','Metal','Miscellaneous Trash','Paper','Plastic','Textile Trash','Vegetation']
+
+# Cool excuses
+excuses = ["Oh no! The horror! ", "I swear it was here yesterday!", 
+           "The dog age my homework! Walahi Walahi boss!", "Please avert your eyes! The shame!", 
+           "It was the intern's fault!", "Reject Finance Bill"]
+
+def cool_excuse():
+    return np.random.choice(excuses, 1)[0]

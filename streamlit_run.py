@@ -1,4 +1,5 @@
 import streamlit as st
+from classes import cool_excuse
 
 # Company Logo
 st.sidebar.image('Images/image4.png', use_column_width=True)
@@ -13,22 +14,23 @@ if selected == "Home":
 
 elif selected == "About":
     tab1, tab2 = st.tabs(["Software Used", "Hardware Used"])
-
+    
     with tab1:
         st.header("Software Description", divider=True)
-        st.write("COMING SOON......")
+        st.write(f"{cool_excuse()} Page Coming Soon...")
 
     with tab2:
         st.header("Hardware Description", divider=True)
-        st.write("COMING SOON......")
+        st.write(f"{cool_excuse()} Page Coming Soon...")
 
 elif selected == "Contact":
-    st.header("DEVELOPER CONTACTS", divider= "rainbow")
+    st.header("Developer Contacts", divider= "rainbow")
     with st.container(border= True):
-        col1, col2, col3 = st.columns(3)
-        with col1:
-            st.write("Annabellah Mbungu   \nannbellah.mbungu@student.moringaschool.com     \nNumber:  ")  
+        col1, col2 = st.columns(2)
         with col2:
-            st.write("Brian Muthama  \nbrian.muthama@student.moringaschool.com   \nNumber:  ")
-        with col3:
-            st.write("Harris Lukundi  \nharris.lukundi@student.moringaschool.com  \nNumber:  ")
+            st.write("""
+                     George Kariuki :goggles:  \nTeam Lead Assistant :hatching_chick:
+                     george.kariuki1@student.moringaschool.com  \nNumber:*Unavailable*""")
+        with col1:
+            st.write("""Harris Lukundi :sunglasses:  \nTeam Lead :crown:
+                     harris.lukundi@student.moringaschool.com  \nNumber:*Unavailable*  """)
