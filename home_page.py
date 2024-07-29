@@ -3,7 +3,7 @@ import streamlit as st
 
 with st.container(border=True):
     st.image('Images/image1.webp', use_column_width=True)
-    st.write("<h1 style='text-align: center;'>IDump Classification System</h1>", unsafe_allow_html=True)
+    st.write("<h1 style='text-align: center;'>iDump Classification System</h1>", unsafe_allow_html=True)
 
     with st.sidebar:
         st.header('Landfill Samples')
@@ -30,10 +30,11 @@ with st.container(border=True):
         else:
             st.sidebar.error(f'The directory "{pickled_images_folder}" does not exist. Please check the path and try again.')
 
-    
+    # A list containing the uploaded files
     uploaded_files = st.file_uploader("Choose images", type=['jpg', 'png', 'jpeg'], accept_multiple_files=True)
         #uploaded_files = st.camera_input("Choose images")
 
+    # This holds the image details
     image_details = []
 
     if 'last_uploaded_image' not in st.session_state:
@@ -42,6 +43,7 @@ with st.container(border=True):
     col1, col2 = st.columns(2, gap="small")
     
     with col1:
+        # Display last uploaded image and image details
         with st.container(border=True):
             if uploaded_files:
                 image = Image.open(uploaded_files[-1])  
@@ -61,34 +63,35 @@ with st.container(border=True):
                     st.write(df)
 
     with col2:
+        # Prediction
         with st.container(border=True):
             if st.session_state.last_uploaded_image:
                 with st.spinner('Classifying...'):
                     time.sleep(2)  
                 
-                st.success('Done!')
+                    st.success('Done!')
                 
                 try:
                     label, confidence = predict(st.session_state.last_uploaded_image)
                     
-                    st.write(f"PREDICTED CLASS: {label}")
-                    st.write(f"CONFIDENCE: {confidence * 100:.2f}%")
+                    st.write(f"Predicted Class: {label}")
+                    st.write(f"Model Confidence: {confidence * 100:.2f}%")
 
-                    st.subheader('MATERIAL HANDLING', divider=True)
+                    st.subheader('Material Handling', divider=True)
                     if label == 'Food Organics' or label == 'Vegetation':
-                        col1, col2 = st.columns(2)
+                        col1, col2 = st.columns([3, 7])
                         with col1:
                             st.image('Images/Compost.jpg', width=120)
                         with col2:
                             st.write('Divertible Organics: From which energy and fertilizer can be derived')
                     elif label in ['Glass', 'Paper', 'Metal', 'Plastic']:
-                        col1, col2 = st.columns(2)
+                        col1, col2 = st.columns([3, 7])
                         with col1:
                             st.image('Images/Recycle.jpg', width=120)
                         with col2:
                             st.write("Recyclable Inorganics: Fit for repurposing")
                     else:
-                        col1, col2 = st.columns(2)
+                        col1, col2 = st.columns([3, 7])
                         with col1:
                             st.image('Images/Trash.jpg', width=120)
                         with col2:
@@ -97,6 +100,7 @@ with st.container(border=True):
                 except Exception as e:
                     st.error(f"An error occurred during prediction: {e}")
 
+    # Customer Feedback Section
     with st.container(border=True):    
         if st.session_state.last_uploaded_image:
             st.write("Was the Image Classified Correctly?")
