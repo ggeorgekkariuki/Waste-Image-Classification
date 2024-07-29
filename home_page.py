@@ -40,7 +40,7 @@ with st.container(border=True):
     if 'last_uploaded_image' not in st.session_state:
         st.session_state.last_uploaded_image = None
 
-    col1, col2 = st.columns(2, gap="small")
+    col1, col2 = st.columns([4, 6], gap="small")
     
     with col1:
         # Display last uploaded image and image details

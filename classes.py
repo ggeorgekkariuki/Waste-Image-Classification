@@ -147,7 +147,7 @@ class_names = ['Food Organics','Glass','Metal','Miscellaneous Trash','Paper','Pl
 # Cool excuses
 excuses = ["Oh no! The horror! ", "I swear it was here yesterday!", 
            "The dog age my homework! Walahi Walahi boss!", "Please avert your eyes! The shame!", 
-           "It was the intern's fault!", "Reject Finance Bill"]
+           "It was the intern's fault!", "Reject Finance Bill!", "Anguka Nayo!!"]
 
 def cool_excuse():
     return np.random.choice(excuses, 1)[0]
