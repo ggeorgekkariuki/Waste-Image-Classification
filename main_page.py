@@ -11,13 +11,20 @@ selected_option = option_menu(
     orientation="horizontal",
 )
 
-# Home Classification Page
+# Home Classification Tab
 if selected_option == "Home":
     with open('home_page.py', 'r') as file:
         code = file.read()
         exec(code)
 
+# Material Handling Tab
 elif selected_option == "Material Handling":
     with open('material_handling.py', 'r') as file:
         code = file.read()
         exec(code)    
+
+# Developer Tab
+elif selected_option == "Developer Mode":
+    with open('developer_page.py', 'r') as file:
+        code = file.read()
+        exec(code)   
