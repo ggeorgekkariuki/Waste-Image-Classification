@@ -43,12 +43,15 @@ The data has 4291 images that can be further classified into the following class
 
 1. A baseline CNN model with no augmentation
 2. A CNN model with image augmentation
-3. A 
-4.
+3. Pre-trained model using InceptionV3 architecture
+4. Pre-trained model using DenseNet121 architecture
 5. Pre-trained model using EfficientNetV2B0 architecture.
 6. Pre-trained model using ResNet50 architecture.
 
-Augmentation of the models ranged from Zoom range, shear range, rotation range, horizontal flip, width shift range and height shift range on the train models. As well as using custom model preprocessing functions with interesting results.
+Augmentation of the models ranged from Zoom range, shear range, rotation range, horizontal flip, width shift range and height shift range on the train models. As well as using custom model preprocessing functions with interesting results as below
+
+![model summary](Images/model_summary.png)
+
 
 ## DEPLOYMENT
 
@@ -80,6 +83,8 @@ It is evident that metals and plastics are the most common landfill materials. F
 This project provided a robust predictive model with continous model learning leveraging strong machine learning techniques. Understanding the needs of the Konza City administration to meet their goals on waste management and making it into an eco-diverse city, was crucial in providing a system that is user-friendly and easily integratable.  
 Continuous updates and refinements are important to ensure the model remains accurate in predicting the waste in the city.
 
-Implementing these models into their city will enhance the beauty of the city as well as improve the quality of life of its residents. Further improvements however can be noted as there is a need to tackle the rapidly increasing e-waste associated with the ease of acquiring electronics.
+Implementing these models into their city will enhance the beauty of the city as well as improve the quality of life of its residents. 
+
+
 
 
