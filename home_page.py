@@ -40,7 +40,7 @@ with st.container(border=True):
     if 'last_uploaded_image' not in st.session_state:
         st.session_state.last_uploaded_image = None
 
-    col1, col2 = st.columns([4, 6], gap="small")
+    col1, col2 = st.columns(2, gap="small")
     
     with col1:
         # Display last uploaded image and image details
@@ -79,23 +79,23 @@ with st.container(border=True):
 
                     st.subheader('Material Handling', divider=True)
                     if label == 'Food Organics' or label == 'Vegetation':
-                        col1, col2 = st.columns([3, 7])
+                        col1, col2 = st.columns([3, 7], gap="medium")
                         with col1:
                             st.image('Images/Compost.jpg', width=120)
                         with col2:
-                            st.write('Divertible Organics: From which energy and fertilizer can be derived')
+                            st.write('Divertible Organics: Derive energy and fertilizer.')
                     elif label in ['Glass', 'Paper', 'Metal', 'Plastic']:
-                        col1, col2 = st.columns([3, 7])
+                        col1, col2 = st.columns([3, 7], gap="medium")
                         with col1:
                             st.image('Images/Recycle.jpg', width=120)
                         with col2:
-                            st.write("Recyclable Inorganics: Fit for repurposing")
+                            st.write("Recyclable Inorganics: Fit for repurposing.")
                     else:
-                        col1, col2 = st.columns([3, 7])
+                        col1, col2 = st.columns([3, 7], gap="medium")
                         with col1:
                             st.image('Images/Trash.jpg', width=120)
                         with col2:
-                            st.write("Inorganic Materials: Requiring Landfill ")
+                            st.write("Inorganic Materials: Requiring Landfill.")
 
                 except Exception as e:
                     st.error(f"An error occurred during prediction: {e}")
