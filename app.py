@@ -129,7 +129,7 @@ def retrain_model():
 # Load the pre-trained model from the .pkl file
 @st.cache_resource
 def load_model():
-    with open('Pickle_files/models/model.pkl', 'rb') as file:
+    with open('Pickle_files/models/resnet50.pkl', 'rb') as file:
         return pickle.load(file)
 
 model = load_model()
@@ -138,7 +138,7 @@ model = load_model()
 class_names = ['Food Organics','Glass','Metal','Miscellaneous Trash','Paper','Plastic','Textile Trash','Vegetation']
 
 # Company Logo
-st.sidebar.image('images/image4.png', use_column_width=True)
+st.sidebar.image('Images/image4.png', use_column_width=True)
 
 # Sidebar Selectbox initialization
 selected = st.sidebar.selectbox("Go to", ["Home", "About", "Contact"])
@@ -165,7 +165,7 @@ if selected == "Home":
     # Home Classification Page
     if selected1 == "Home":
         with st.container(border=True):
-            st.image('images/image1.webp', use_column_width=True)
+            st.image('Images/image1.webp', use_column_width=True)
             st.write("<h1 style='text-align: center;'>IDump Classification System</h1>", unsafe_allow_html=True)
 
             with st.sidebar:
@@ -240,19 +240,19 @@ if selected == "Home":
                             if label == 'Food Organics' or label == 'Vegetation':
                                 col1, col2 = st.columns(2)
                                 with col1:
-                                    st.image('images/Compost.jpg', width=120)
+                                    st.image('Images/Compost.jpg', width=120)
                                 with col2:
                                     st.write('Divertible Organics: From which energy and fertilizer can be derived')
                             elif label in ['Glass', 'Paper', 'Metal', 'Plastic']:
                                 col1, col2 = st.columns(2)
                                 with col1:
-                                    st.image('images/Recycle.jpg', width=120)
+                                    st.image('Images/Recycle.jpg', width=120)
                                 with col2:
                                     st.write("Recyclable Inorganics: Fit for repurposing")
                             else:
                                 col1, col2 = st.columns(2)
                                 with col1:
-                                    st.image('images/Trash.jpg', width=120)
+                                    st.image('Images/Trash.jpg', width=120)
                                 with col2:
                                     st.write("Inorganic Materials: Requiring Landfill ")
 
@@ -275,7 +275,7 @@ if selected == "Home":
         st.header("Compost Procedures", divider=True)
         col1, col2 = st.columns(2)
         with col1:
-            st.image('images/Compost.jpg', width=120)
+            st.image('Images/Compost.jpg', width=120)
         with col2:
             st.write('Divertible Organics:')
             st.write('From which energy and fertilizer can be derived')
@@ -284,7 +284,7 @@ if selected == "Home":
         st.header("Recycle Procedures", divider=True)
         col1, col2 = st.columns(2)
         with col1:
-            st.image('images/Recycle.jpg', width=120)
+            st.image('Images/Recycle.jpg', width=120)
         with col2:
             st.write("Recyclable Inorganics:")
             st.write("Fit for repurposing")
@@ -293,7 +293,7 @@ if selected == "Home":
         st.header("Trash Procedures", divider=True)
         col1, col2 = st.columns(2)
         with col1:
-            st.image('images/Trash.jpg', width=120)
+            st.image('Images/Trash.jpg', width=120)
         with col2:
             st.write("Inorganic Materials:")
             st.write("Requiring Landfill")
@@ -313,7 +313,7 @@ if selected == "Home":
                     if st.button("Confirm Correction"):
                         if correct_class:
                             move_image_to_correct_folder(image, correct_class) 
-                            if st.button("Retrain Model"):
+                            if st.button("TEACH"):
                                 st.write("Kindly Be Patient......")
                                 st.write("This will take up to an hour!!!")
                                 retrain_model()
