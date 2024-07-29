@@ -40,12 +40,14 @@ The data  had 4291 image that can be further classified into the following class
 
 1. A baseline CNN model with no augmentation
 2. A CNN model with image augmentation
-3. A 
-4.
+3. Pre-trained model using InceptionV3 architecture
+4. Pre-trained model using DenseNet121 architecture
 5. Pre-trained model using EfficientNetV2B0 architecture.
 6. Pre-trained model using ResNet50 architecture.
 
-Augementation of the models ranged from Zoom range, shear range, rotation range, horizontal flip, width shift range and height shift range on the train models. As well as using custom model preprocessing functions with interesting results.
+Augmentation of the models ranged from Zoom range, shear range, rotation range, horizontal flip, width shift range and height shift range on the train models. As well as using custom model preprocessing functions with interesting results as below
+
+![model summary](Images/model_summary.png)
 
 ## DEPLOYMENT
 
