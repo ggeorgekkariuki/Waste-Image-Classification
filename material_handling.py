@@ -17,8 +17,7 @@ with col2:
             label="Your compost instructions will be forwarded to our Team Lead Harris.",
             placeholder="Enter compost instructions here")
         st.button("Submit", key="compost")
-    if st.button("Submit", key="compost"):
-        st.write(compost_instructions)
+    st.write(compost_instructions)
 
 # Section - Recycle
 st.header("Recycle Procedures", divider=True)
@@ -34,8 +33,8 @@ with col2:
             label="Your recycle instructions will be forwarded to our Team Lead Harris.",
             placeholder="Enter recycle instructions here")
         st.button("Submit", key="recycle")
-    if st.button("Submit", key="recycle"):
-            st.write(recycle_instructions)
+    st.write(recycle_instructions)
+
 
 # Section - Trash
 st.header("Trash Procedures", divider=True)
@@ -48,8 +47,7 @@ with col2:
     st.write("Requiring Landfill")
     with st.expander("Give Explicit instructions"):
         trash_instructions = st.text_area(
-            label="Your trash instructions will be forwarded to our Team Lead Harris.",
-            placeholder="Enter trash instructions here")
+            label="Your 'trash' instructions will be forwarded to our Team Lead Harris.",
+            placeholder="Talk dirty to me :wink:")
         st.button("Submit", key="trash")
-    if st.button("Submit", key="trash"):
-            st.write(trash_instructions)
+    st.write(trash_instructions)
