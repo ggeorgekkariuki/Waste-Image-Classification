@@ -313,7 +313,7 @@ if selected == "Home":
                     if st.button("Confirm Correction"):
                         if correct_class:
                             move_image_to_correct_folder(image, correct_class) 
-                            if st.button("Retrain Model"):
+                            if st.button("Teach Model"):
                                 st.write("Kindly Be Patient......")
                                 st.write("This will take up to an hour!!!")
                                 retrain_model()
