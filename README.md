@@ -69,6 +69,7 @@ A selectbox introduced a means to add that misclassified image to the training d
 ## RESULTS AND CONCLUSIONS
 
 **Results**
+
 Our predictive modeling approach effectively addresses the challenge experienced by Konza City on their waste management. Using advanced neural network machine learning, we developed a model that accurately and efficiently categorizes real waste found in a landfill. The ResNet50 model provided the best performance achieving the highest accuracy across the board
 
 **Conclusion**
