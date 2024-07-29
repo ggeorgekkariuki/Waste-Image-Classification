@@ -16,9 +16,11 @@ Konza City Technopolis faces significant challenges in managing the diverse and 
 ## Objectives
 
 **Main Objective:**
+
 To Develop and deploy a robust image recognition system to enhance waste management efficiency in Konza City.
 
 **Specific Objectives:**
+
 1. Gather and preprocess a diverse dataset of waste images to ensure robust model training, including various types and conditions of waste items.
 2. Analyze and report the most common types of waste collected.
 3. Accurately classify waste into their distinct material types and categorize them into recyclable inorganics, divertible organics, and non-recyclable inorganic materials to improve waste management.
